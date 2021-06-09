@@ -6,3 +6,9 @@ scikit-learn==0.24.1
 cython==0.29.23
 pystan==2.19.1.1
 fbprophet==0.6
+pydotplus==2.0.2
+
+tensorflow
+pytorch
+keras
+theano
