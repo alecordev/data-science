@@ -11,8 +11,8 @@ vix = pd.read_csv(
     parse_dates=True,
     na_values='.',
     infer_datetime_format=True,
-    squeeze=True,
-).dropna()
+    # squeeze=True,
+).squeeze("columns").dropna()
 ma = vix.rolling('90d').mean()
 state = pd.cut(ma, bins=[-np.inf, 14, 18, 24, np.inf], labels=range(4))
 
