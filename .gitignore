@@ -6,3 +6,5 @@ dask-worker-space/
 
 *.png
 *.gz
+*.joblib
+*.pkl

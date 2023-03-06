@@ -38,8 +38,11 @@ def save_tree_graph():
         filled=True,
         rounded=True,
         special_characters=True,
-        feature_names=dataset['feature_names'],
-        class_names=['0', '1', '2'],
+        feature_names=dataset["feature_names"],
+        class_names=["0", "1", "2"],
     )
     graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-    graph.write_png('iris_tree.png')
+    graph.write_png("iris_tree.png")
+
+
+save_tree_graph()

@@ -19,6 +19,7 @@ from sklearn.metrics import (
     recall_score,
     precision_score,
     confusion_matrix,
+    precision_recall_curve,
 )
 
 # Models
@@ -101,6 +102,13 @@ def train_and_evaluate_model(model, X_train, X_test, y_train, y_test, charts=Fal
         cv=cv,
         scoring="accuracy",
     )
+    # gs = GridSearchCV(
+    #     clf,
+    #     param_grid=param_grid,
+    #     # n_iter=n_iter_search,
+    #     cv=cv,
+    #     scoring="accuracy",
+    # )
     gs.fit(X_train, y_train)
     print(f"The best parameters are {gs.best_params_}")
 
