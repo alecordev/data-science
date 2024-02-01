@@ -2,7 +2,7 @@ pandas==1.2.4
 numpy==1.22.0
 statsmodels==0.12.2
 matplotlib==3.3.4
-scikit-learn==0.24.1
+scikit-learn==1.0.1
 cython==0.29.23
 pystan==2.19.1.1
 fbprophet==0.6
