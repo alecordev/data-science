@@ -1,0 +1,40 @@
+ipython
+jupyterlab
+ipywidgets
+jupyterlab_widgets
+
+numpy
+pandas
+matplotlib
+seaborn
+
+scikit-learn
+statsmodels
+scipy
+sympy
+prophet
+neuralprophet[live]
+# scikit-surprise
+
+transformers
+datasets
+openai
+langchain-openai
+tiktoken
+faiss-cpu
+langchainhub
+# nltk
+# spacy
+# torch
+# tensorflow
+
+plotly
+streamlit
+requests
+beautifulsoup4
+joblib
+httpx
+jinja2
+fastapi
+uvicorn
+black

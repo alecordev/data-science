@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+
+    jupyterlab:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: jupyterlab
+        # env_file:
+        #     - .env
+        environment:
+            - API_KEY=EXAMPLE_API_KEY
+        ports:
+            - "8888:8888"
+        volumes:
+            - ./.docker/home:/opt/app/home
+            - ../../data:/opt/app/home/data:ro
+            - ./.docker/huggingface/hub:/root/.cache/huggingface/hub  # huggingface downloads and cache
+        entrypoint: sh -c "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --notebook-dir=/opt/app/home --allow-root --NotebookApp.token='' --NotebookApp.password=''"
