@@ -161,6 +161,8 @@ cython_debug/
 
 logs/
 dask-worker-space/
+huggingface/
+lightning_logs/
 
 *.png
 *.gz
