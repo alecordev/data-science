@@ -11,5 +11,8 @@ pydotplus==2.0.2
 shap
 tensorflow
 pytorch
-keras
+keras==3.7.0
 theano
+jax[cuda12]==0.4.21
+tensorflow
+scikeras

@@ -170,4 +170,6 @@ lightning_logs/
 *.pkl
 *.pt
 *.pth
+*.keras
+*.h5
 eval_results.txt
